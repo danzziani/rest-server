@@ -14,6 +14,10 @@ app.use(bodyParser.json())
 //Index routes
 app.use(require('./routes/index'))
 
+//Habilitar la carpeta public
+app.use(express.static('/home/adrian/Escritorio/node/07-rest-server/public'));
+//console.log(path.resolve(__dirname,'../public'));
+
 
 mongoose.connect(process.env.URLDB, (err, res) => {
     if (err) throw err;

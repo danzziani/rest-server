@@ -16,5 +16,7 @@ if (process.env.NODE_ENV === 'dev'){
 }
 process.env.URLDB = urlDB;
 
+process.env.CLIENT_ID = process.env.CLIENT_ID || '210498600551-ic6dlrpdmlq4j02ku1c3q4bjok8e4kuv.apps.googleusercontent.com';
+
 //mongodb://localhost:27017/cafe
 //mongodb://cafe-user:a12345/@ds125365.mlab.com:25365/cafe
